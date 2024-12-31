@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Abu Hammad</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Users</a></li>
+          <li class="active"><a href="#">Orders</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="header">
+        <h1>Orders</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search users...">
+          <select>
+            <option>All Statuses</option>
+            <option>Pending</option>
+            <option>Completed</option>
+          </select>
+          <button>Search</button>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#001</td>
+            <td>John Doe</td>
+            <td>$100</td>
+            <td>Pending</td>
+            <td>2024-12-20</td>
+            <td>
+              <button class="view">View</button>
+              <button class="cancel">Cancel</button>
+            </td>
+          </tr>
+          <tr>
+            <td>#002</td>
+            <td>Jane Smith</td>
+            <td>$250</td>
+            <td>Completed</td>
+            <td>2024-12-19</td>
+            <td>
+              <button class="view">View</button>
+              <button class="refund">Refund</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
